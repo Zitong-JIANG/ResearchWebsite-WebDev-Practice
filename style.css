@@ -1,0 +1,77 @@
+:root {
+  /* color palette: https://colorhunt.co/palette/f2debaffefd60e5e6f3a8891 */
+  /* variables in css to store color and font family */
+  --color-bg: #f2e7d5;
+  --color-text-main: #393e46;
+  --color-text-darker: #3e3e3e;
+  --color-text-lighter: #ffefd6;
+  --color-primary: #6d9886;
+  --font-family: "Inter", sans-serif;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-bg);
+  margin: 0; /* reset basic style */
+}
+
+#top-but{  
+  position: sticky; /* stick to the screen */
+  bottom: 2em;
+  left: 95vw;
+  
+  text-decoration: none;
+  color: var(--color-primary);
+}
+#top-but i{ 
+  font-size: 3em;
+}
+#top-but i:hover{ 
+  color: var(--color-text-darker);
+}
+
+header {
+  width: 100%;
+  padding: 0em 3em;
+
+  background-color: var(--color-primary);
+  color: var(--color-text-lighter);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div a {
+  padding: 0.5em 1em;
+  margin: 0em 0.2em;
+
+  text-decoration: none;
+  color: var(--color-text-lighter);
+}
+
+header div a:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  border-radius: 1em;
+}
+
+article {
+  background-color: white;
+
+  /* set article layout */
+  max-width: 80%;
+  margin: 2em auto; /* to center article */
+  padding: 1em 2em;
+}
+img{
+  position: relative;
+	top: 50%;
+	right: 0.5%;
+}
